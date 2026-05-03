@@ -27,7 +27,7 @@ export default function Hero() {
   const canRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    const t = setInterval(() => setRi(i => (i + 1) % ROLES.length), 3200);
+    const t = setInterval(() => setRi(i => (i + 1) % ROLES.length), 3000);
     return () => clearInterval(t);
   }, []);
 
