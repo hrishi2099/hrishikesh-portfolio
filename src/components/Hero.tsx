@@ -6,7 +6,7 @@ import { useScramble } from "@/hooks/useScramble";
 const ROLES = ["Full Stack Engineer", "System Designer", "Open Source Contributor", "Performance Optimizer"];
 
 function SkillMiniCard({ label, pct, delay }: { label: string, pct: number, delay: number }) {
-  const [ref, vis] = useInView(0.1);
+  const [ref, vis] = useInView<HTMLDivElement>(0.1);
   return (
     <div ref={ref} style={{ border: "1px solid var(--border)", padding: "12px" }}>
       <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "8px" }}>
